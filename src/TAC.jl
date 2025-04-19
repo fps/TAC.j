@@ -1,4 +1,6 @@
 module TAC
+    import Logging
+
     const log_cond = Ref{Any}()
 
     function f()
@@ -19,6 +21,7 @@ module TAC
     export g
 
     function __init__()
+        println(Logging.current_logger())
         @info "init"
         log_cond[] = Base.AsyncCondition() do cond 
             @debug "cond-debug"
