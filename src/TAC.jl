@@ -13,8 +13,9 @@ module TAC
 	function __init__()
         @info "init"
         log_cond[] = Base.AsyncCondition() do cond 
-	        @debug "cond"
-	        println("la")
+	        @debug "cond-debug"
+            @info "cond-info"
+	        println("cond-print")
         end
         f()
     end
