@@ -8,7 +8,15 @@ module TAC
         end
     end
 
+    function g()
+        for n in 1:10
+            sleep(1)
+            ccall(:uv_async_send, Cint, (Ptr{Cvoid},), log_cond[])
+        end
+    end
+
     export f
+    export g
 
     function __init__()
         @info "init"
