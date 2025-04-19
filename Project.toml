@@ -2,3 +2,9 @@ name = "TAC"
 uuid = "9333d8be-4441-408d-b271-bf9bc2b9e7b3"
 authors = ["Florian Paul Schmidt <mista.tapas@gmx.net>"]
 version = "0.1.0"
+
+[deps]
+Logging = "56ddb016-857b-54e1-b83d-db4d58db5568"
+
+[compat]
+Logging = "1.11.0"
