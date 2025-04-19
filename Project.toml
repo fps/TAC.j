@@ -1,0 +1,4 @@
+name = "TAC"
+uuid = "9333d8be-4441-408d-b271-bf9bc2b9e7b3"
+authors = ["Florian Paul Schmidt <mista.tapas@gmx.net>"]
+version = "0.1.0"
